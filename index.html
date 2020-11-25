@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #eee;
+        }
+        h1{
+            text-align: center;
+          
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: white;
+            color: #03446a;
+            line-height: 300px;
+            text-align: center;
+            font-size: 40px;
+            margin: -150px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            animation-name: sample;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation-delay: 2s; */
+        }
+        @keyframes sample {
+            0%{
+                     border-radius: 0%;
+            }
+            50%{
+                background-color: yellow;
+                color: tomato;
+            }
+            100%{
+                    border-radius: 50%;
+                    background-color: yellowgreen;
+                    color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="box">
+        Jay Shah
+    </div>
+</body>
+</html>
